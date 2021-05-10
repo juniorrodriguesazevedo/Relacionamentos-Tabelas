@@ -11,6 +11,7 @@ Route::get('/onetoone-insert', [OneToOneController::class, 'oneToOneInsert']);
 
 /* One To Many */
 Route::get('/one-to-many', [OneToManyController::class, 'oneToMany']);
+Route::get('/many-to-one', [OneToManyController::class, 'manyToOne']);
 
 Route::get('/', function () {
     return view('welcome');
