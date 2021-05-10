@@ -4,8 +4,6 @@ namespace App\Http\Controllers;
 
 use App\Models\Country;
 use App\Models\Location;
-use GuzzleHttp\Promise\Create;
-use Illuminate\Http\Request;
 
 class OneToOneController extends Controller
 {
