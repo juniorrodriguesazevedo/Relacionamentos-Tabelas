@@ -5,6 +5,7 @@ use App\Http\Controllers\ManyToManyController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\OneToOneController;
 use App\Http\Controllers\OneToManyController;
+use App\Http\Controllers\PolymorphicController;
 
 /* One To One */
 Route::get('/onetoone', [OneToOneController::class, 'oneToOne']);
@@ -25,6 +26,10 @@ Route::get('/has-many-through', [HasManyThroughController::class, 'hasManyThroug
 Route::get('/many-to-many', [ManyToManyController::class, 'manyToMany']);
 Route::get('/many-to-many-inverse', [ManyToManyController::class, 'manyToManyInverse']);
 Route::get('/many-to-many-insert', [ManyToManyController::class, 'manyToManyInsert']);
+
+/* Relation Polymorphic */
+Route::get('/polymorphic', [PolymorphicController::class, 'polymorphic']);
+Route::get('/polymorphic-insert', [PolymorphicController::class, 'polymorphicInsert']);
 
 Route::get('/', function () {
     return view('welcome');
