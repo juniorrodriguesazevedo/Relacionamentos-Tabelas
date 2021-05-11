@@ -13,6 +13,8 @@ Route::get('/onetoone-insert', [OneToOneController::class, 'oneToOneInsert']);
 Route::get('/one-to-many', [OneToManyController::class, 'oneToMany']);
 Route::get('/many-to-one', [OneToManyController::class, 'manyToOne']);
 Route::get('/one-to-man-two', [OneToManyController::class, 'oneToManyTwo']);
+Route::get('/one-to-man-insert', [OneToManyController::class, 'oneToManyInsert']);
+Route::get('/one-to-man-insert-Two', [OneToManyController::class, 'oneToManyInsertTwo']);
 
 Route::get('/', function () {
     return view('welcome');
