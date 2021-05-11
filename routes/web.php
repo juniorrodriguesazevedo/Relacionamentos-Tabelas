@@ -12,7 +12,7 @@ Route::get('/onetoone-insert', [OneToOneController::class, 'oneToOneInsert']);
 /* One To Many */
 Route::get('/one-to-many', [OneToManyController::class, 'oneToMany']);
 Route::get('/many-to-one', [OneToManyController::class, 'manyToOne']);
-Route::get('/one-to-man-two', [OneToManyController::class, 'manyToOneTwo']);
+Route::get('/one-to-man-two', [OneToManyController::class, 'oneToManyTwo']);
 
 Route::get('/', function () {
     return view('welcome');
