@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\HasManyThroughController;
+use App\Http\Controllers\ManyToManyController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\OneToOneController;
 use App\Http\Controllers\OneToManyController;
@@ -19,6 +20,9 @@ Route::get('/one-to-man-insert-Two', [OneToManyController::class, 'oneToManyInse
 
 /* Has Many Through */
 Route::get('/has-many-through', [HasManyThroughController::class, 'hasManyThrough']);
+
+/* Many To Many */
+Route::get('/many-to-many', [ManyToManyController::class, 'manyToMany']);
 
 Route::get('/', function () {
     return view('welcome');
